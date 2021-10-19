@@ -17,10 +17,10 @@ body{
 .stats-card{
     background-color: hsl(244, 38%, 16%);
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
     margin: 10em auto;
     margin-bottom: 0;
-    width: 70%;
+    max-width: 1200px;
 }
 
 .stats-card--desc{
@@ -73,15 +73,21 @@ body{
 @media screen and (max-width: 375px){
     .stats-card{
         /* justify-content: end; */
-        grid-template-columns: repeat(autofit,minmax(375px,1fr));
-        grid-template-rows: repeat(2,1fr);
+        /* grid-template-columns: repeat(auto-fit,minmax(375px,1fr));
+        grid-template-rows: repeat(2,1fr); */
     }
 
-    .stats-card--image{
+    /* .stats-card--image{
         background: hsl(277, 64%, 61%);
         background: linear-gradient(rgba(170,92,219,0.4), rgba(170, 92, 219, 0.4)), url("./images/image-header-mobile.jpg"); 
         background-repeat: no-repeat;
         background-size: 100%;
-    }
+    } */
 
+    .stats-card--stat{
+        display: block;
+        padding: 0.2em 2em 0.5em 0em;
+        text-align: center;
+    }
+    
 }
