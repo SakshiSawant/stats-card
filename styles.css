@@ -77,17 +77,17 @@ body{
         grid-template-rows: repeat(2,1fr); */
     }
 
-    /* .stats-card--image{
+    .stats-card--image{
         background: hsl(277, 64%, 61%);
         background: linear-gradient(rgba(170,92,219,0.4), rgba(170, 92, 219, 0.4)), url("./images/image-header-mobile.jpg"); 
         background-repeat: no-repeat;
         background-size: 100%;
-    } */
+    }
 
     .stats-card--stat{
         display: block;
         padding: 0.2em 2em 0.5em 0em;
         text-align: center;
     }
-    
+
 }
